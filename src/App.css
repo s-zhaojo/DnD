@@ -19,7 +19,9 @@
   font-size: 40px;
   font-weight: bold;
   color: #fff;
-  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  transform: rotateX(0deg) rotateY(0deg);
 }
 
 .dice.rolling {
@@ -28,19 +30,19 @@
 
 @keyframes rollDice {
   0% {
-    transform: rotate(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
   25% {
-    transform: rotate(90deg);
+    transform: rotateX(180deg) rotateY(0deg);
   }
   50% {
-    transform: rotate(180deg);
+    transform: rotateX(0deg) rotateY(180deg);
   }
   75% {
-    transform: rotate(270deg);
+    transform: rotateX(180deg) rotateY(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
   }
 }
 
