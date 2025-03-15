@@ -1,94 +1,55 @@
-/* General reset for margin and padding */
+/* Global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* App container */
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
 }
 
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+/* Header */
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
-    display: inline-block;
-    margin-left: 20px;
+/* Logo styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-nav ul {
-    list-style: none;
-    float: right;
-    margin-right: 20px;
+/* Links */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+.App-link:hover {
+  text-decoration: underline;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Main content styles */
-main {
-    padding: 20px;
-}
-
-.intro {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    nav ul {
-        float: none;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    header h1 {
-        display: block;
-        text-align: center;
-        margin: 10px 0;
-    }
+/* Heading */
+h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #61dafb;
 }
