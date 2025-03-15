@@ -1,43 +1,33 @@
 import logo from './coupon.svg';
 import './App.css';
-import { useState } from 'react'; // Import the useState hook
+import { useState } from 'react';
 
 function App() {
-  // List of possible links
-  const links = [
-    'https://www.dominos.com/en/pages/order/coupon#!/coupon/national/',
-    'https://www.panerabread.com/en-us/panera-promo-codes-discount-coupons-deals.html',
-    'https://www.couponcabin.com/coupons/dominos/',
-    'https://www.retailmenot.com/view/dominos.com',
-    'https://www.groupon.com/coupons/stores/dominos.com',
-    'https://www.ebates.com/coupons/dominos.com',
-    'https://www.discountcoupons.com/store/dominos-coupons',
-    'https://www.slickdeals.net/coupons/dominos/',
-    'https://www.valpak.com/coupons/get/dominos-coupons',
-    'https://www.offers.com/dominos-coupons/',
-    'https://www.coupons.com/printable'
+  // List of possible fake actions
+  const actions = [
+    'Downloading a virus (just kidding!)',
+    'Closing the tab (fake close)',
+    'Automatically downloading Minecraft Education Edition (fake download)',
+    'Downloading Goose Virus (fake alert)',
+    'Playing Rick Roll on YouTube (fake video)',
+    'Watching the entire Skipidi Toilet series (fake message)',
+    'Opening a random website (fake opening)',
+    'Restarting your computer (fake restart)',
+    'Leaking your IP address (fake leak)',
+    'Opening Facebook (fake page)',
+    'Sending a link to vote for something (fake action)',
+    'Giving credit card info or shutting down your computer (fake alert)'
   ];
 
-  // useState hook to store the current coupon link and dice roll result
-  const [currentLink, setCurrentLink] = useState(links[0]); // Default to the first link
-  const [diceRoll, setDiceRoll] = useState(null); // State to store the dice roll result
+  // useState hook to store the current dice roll result
+  const [diceRoll, setDiceRoll] = useState(null);
+  const [action, setAction] = useState('');
 
-  // Function to randomly select a link
-  const getRandomLink = () => {
-    const randomIndex = Math.floor(Math.random() * links.length);
-    return links[randomIndex];
-  };
-
-  // Function to roll the dice (1 to 12)
+  // Function to simulate the dice roll (1 to 12)
   const rollDice = () => {
     const roll = Math.floor(Math.random() * 12) + 1; // Random number between 1 and 12
     setDiceRoll(roll); // Set the dice roll result to state
-  };
-
-  // Handle the click event for the coupon link
-  const handleClick = () => {
-    const newLink = getRandomLink();  // Get a new random link
-    setCurrentLink(newLink);          // Update the state with the new link
+    setAction(actions[roll - 1]); // Set the action based on the dice roll
   };
 
   return (
@@ -45,7 +35,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Roll the D12</h1>
-        <p>Find great coupons for your favorite brands!</p>
+        <p>Find out what happens when you roll the dice!</p>
         
         {/* Dice Roll Display */}
         <div>
@@ -53,16 +43,12 @@ function App() {
           <button onClick={rollDice}>Roll Dice</button>
         </div>
 
-        {/* Coupon Link Section */}
-        <a
-          className="App-link"
-          href={currentLink} // Use the state for the link
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={handleClick} // Update the link when clicked
-        >
-          Generate Coupon
-        </a>
+        {/* Action Display */}
+        {action && (
+          <div className="action">
+            <p>{action}</p>
+          </div>
+        )}
       </header>
     </div>
   );
