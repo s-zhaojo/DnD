@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react'; // Import the useState hook
 
 function App() {
   // List of possible links
@@ -16,10 +17,19 @@ function App() {
     'https://www.offers.com/dominos-coupons/'
   ];
 
+  // useState hook to store the current coupon link
+  const [currentLink, setCurrentLink] = useState(links[0]); // Default to the first link
+
   // Function to randomly select a link
   const getRandomLink = () => {
     const randomIndex = Math.floor(Math.random() * links.length);
     return links[randomIndex];
+  };
+
+  // Handle the click event
+  const handleClick = () => {
+    const newLink = getRandomLink();  // Get a new random link
+    setCurrentLink(newLink);          // Update the state with the new link
   };
 
   return (
@@ -32,9 +42,10 @@ function App() {
         </p>
         <a
           className="App-link"
-          href={getRandomLink()} // Randomly generated link
+          href={currentLink} // Use the state for the link
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleClick} // Update the link when clicked
         >
           Generate Coupon
         </a>
