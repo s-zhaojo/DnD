@@ -18,8 +18,9 @@ function App() {
     'https://www.coupons.com/printable'
   ];
 
-  // useState hook to store the current coupon link
+  // useState hook to store the current coupon link and dice roll result
   const [currentLink, setCurrentLink] = useState(links[0]); // Default to the first link
+  const [diceRoll, setDiceRoll] = useState(null); // State to store the dice roll result
 
   // Function to randomly select a link
   const getRandomLink = () => {
@@ -27,7 +28,13 @@ function App() {
     return links[randomIndex];
   };
 
-  // Handle the click event
+  // Function to roll the dice (1 to 12)
+  const rollDice = () => {
+    const roll = Math.floor(Math.random() * 12) + 1; // Random number between 1 and 12
+    setDiceRoll(roll); // Set the dice roll result to state
+  };
+
+  // Handle the click event for the coupon link
   const handleClick = () => {
     const newLink = getRandomLink();  // Get a new random link
     setCurrentLink(newLink);          // Update the state with the new link
@@ -38,9 +45,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Roll the D12</h1>
-        <p>
-          Find great coupons for your favorite brands!
-        </p>
+        <p>Find great coupons for your favorite brands!</p>
+        
+        {/* Dice Roll Display */}
+        <div>
+          <p>Dice Roll Result: {diceRoll ? diceRoll : 'Not rolled yet'}</p>
+          <button onClick={rollDice}>Roll Dice</button>
+        </div>
+
+        {/* Coupon Link Section */}
         <a
           className="App-link"
           href={currentLink} // Use the state for the link
