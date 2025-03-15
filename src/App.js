@@ -38,7 +38,7 @@ function App() {
 
   // Drag start event to show that it can be dragged
   const handleDragStart = (event) => {
-    event.dataTransfer.setData("text", event.target.id);
+    event.dataTransfer.setData("text", event.target.id);vv
   };
 
   return (
