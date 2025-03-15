@@ -15,6 +15,7 @@ function App() {
     'https://www.slickdeals.net/coupons/dominos/',
     'https://www.valpak.com/coupons/get/dominos-coupons',
     'https://www.offers.com/dominos-coupons/'
+    'https://www.coupons.com/printable'
   ];
 
   // useState hook to store the current coupon link
