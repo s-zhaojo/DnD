@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './coupon.svg';
 import './App.css';
 import { useState } from 'react'; // Import the useState hook
 
