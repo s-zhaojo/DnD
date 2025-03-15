@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Welcome to the Random Coupon website</h1>
+        <h1>Roll the D12</h1>
         <p>
           Find great coupons for your favorite brands!
         </p>
