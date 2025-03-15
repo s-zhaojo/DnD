@@ -1,4 +1,3 @@
-import logo from './coupon.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 
@@ -49,11 +48,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Roll the D12</h1>
         <p>Find out what happens when you roll the dice!</p>
 
-        {/* Dice Roll Animation */}
+        {/* 3D Dice Roll Animation */}
         <div className="dice-container">
           <div className={`dice ${isRolling ? 'rolling' : ''}`}>
             <p>{diceRoll ? diceRoll : '?'}</p>
