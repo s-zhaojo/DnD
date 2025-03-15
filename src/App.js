@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { YoctoQueue } from 'yocto-queue';
 
 function App() {
   return (
