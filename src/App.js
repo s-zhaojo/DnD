@@ -1,6 +1,6 @@
 import logo from './coupon.svg';
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   // List of possible fake actions
@@ -19,16 +19,32 @@ function App() {
     'Giving credit card info or shutting down your computer (fake alert)'
   ];
 
-  // useState hook to store the current dice roll result
+  // useState hook to store the current dice roll result and dice animation state
   const [diceRoll, setDiceRoll] = useState(null);
   const [action, setAction] = useState('');
+  const [isRolling, setIsRolling] = useState(false); // For controlling the dice animation
 
   // Function to simulate the dice roll (1 to 12)
   const rollDice = () => {
-    const roll = Math.floor(Math.random() * 12) + 1; // Random number between 1 and 12
-    setDiceRoll(roll); // Set the dice roll result to state
-    setAction(actions[roll - 1]); // Set the action based on the dice roll
+    setIsRolling(true); // Start the rolling animation
+    setAction('');
+
+    // Simulate rolling with a slight delay before showing the result
+    setTimeout(() => {
+      const roll = Math.floor(Math.random() * 12) + 1; // Random number between 1 and 12
+      setDiceRoll(roll); // Set the dice roll result to state
+      setAction(actions[roll - 1]); // Set the action based on the dice roll
+      setIsRolling(false); // End the rolling animation
+    }, 1000); // 1 second delay before displaying the result
   };
+
+  useEffect(() => {
+    // Reset the dice roll result after animation
+    if (!isRolling && diceRoll !== null) {
+      const roll = diceRoll; // Grab the roll result
+      setAction(actions[roll - 1]);
+    }
+  }, [diceRoll, isRolling]);
 
   return (
     <div className="App">
@@ -36,11 +52,17 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Roll the D12</h1>
         <p>Find out what happens when you roll the dice!</p>
-        
-        {/* Dice Roll Display */}
+
+        {/* Dice Roll Animation */}
+        <div className="dice-container">
+          <div className={`dice ${isRolling ? 'rolling' : ''}`}>
+            <p>{diceRoll ? diceRoll : '?'}</p>
+          </div>
+        </div>
+
+        {/* Dice Roll Button */}
         <div>
-          <p>Dice Roll Result: {diceRoll ? diceRoll : 'Not rolled yet'}</p>
-          <button onClick={rollDice}>Roll Dice</button>
+          <button onClick={rollDice} disabled={isRolling}>Roll Dice</button>
         </div>
 
         {/* Action Display */}
