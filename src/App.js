@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Welcome to the Random Coupon website</h1>
         <p>
-            Generate Coupon
+            Dropdown placeholder
         </p>
         <a
           className="App-link"
@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Generate Coupon
         </a>
       </header>
     </div>
