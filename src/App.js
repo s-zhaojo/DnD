@@ -12,7 +12,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.dominos.com/en/pages/order/coupon#!/coupon/national/"
           target="_blank"
           rel="noopener noreferrer"
         >
