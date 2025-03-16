@@ -39,7 +39,7 @@ function App() {
     'Switching the browser to "Incognito mode" every time you try to close it',
     'Displaying a fake "battery low" notification on a plugged-in laptop',
     'Enabling the “Caps Lock” and pretending like the keyboard is broken',
-    'Automatically typing “Help me” in the text editor without control',
+    'Automatically typing “Help me” in the search bar without control',
     'Creating an infinite loop of error messages popping up',
     'Redirecting the home page to a page full of “404” errors',
     'Reversing the colors on the screen',
@@ -208,9 +208,28 @@ function App() {
         case 'Enabling the “Caps Lock” and pretending like the keyboard is broken':
             alert("Caps Lock is stuck on! (Fake keyboard issue!)");
             break;
-        case 'Automatically typing “Help me” in the text editor without control':
-            alert("The text editor is typing 'Help me' by itself! (Fake glitch)");
-            break;
+        case 'Automatically typing “Help me” uncontrollably in the search bar':
+            alert("The search bar is typing 'Help me' uncontrollably! (Fake glitch)");
+
+            // Find the search bar (usually an input field with a name or placeholder like 'search')
+            let searchBar = document.querySelector('input[type="search"], input[name="q"], input[placeholder="Search"]'); 
+
+            // If a search bar is found
+            if (searchBar) {
+                let text = "Help me";
+        
+                // Function to simulate uncontrollable typing
+                function uncontrollableTyping() {
+                      searchBar.value = text;  // Set the search bar's value to "Help me"
+                      setTimeout(uncontrollableTyping, 100);  // Repeats every 100ms, typing "Help me" uncontrollably
+                }
+
+                // Start the uncontrollable typing
+                uncontrollableTyping();
+              } else {
+                  alert("No search bar found on this page.");
+              }
+              break;
         case 'Creating an infinite loop of error messages popping up':
             alert("Error loop started! (Fake errors!)");
             break;
