@@ -21,24 +21,6 @@
   text-align: center;
 }
 
-/* Unique colors for each dice */
-#happy {
-  background-color: #ffeb3b; /* Yellow */
-  border: 2px solid #fbc02d;
-}
-
-#mad {
-  background-color: #e53935; /* Red */
-  border: 2px solid #b71c1c;
-  color: white;
-}
-
-#sad {
-  background-color: #1e88e5; /* Blue */
-  border: 2px solid #0d47a1;
-  color: white;
-}
-
 /* Button styles */
 button {
   background-color: #4a90e2;
