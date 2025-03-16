@@ -16,6 +16,49 @@ function App() {
     'Opening Facebook (fake page)',
     'Sending a link to vote for something (fake action)',
     'Giving credit card info or shutting down your computer (fake alert)'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    // first fifteen
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    // frist 30
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+  //fisrt 45
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+    '{fill in with idea}'
+  //50 :D
+    
   ];
 
   // useState hook to store the current dice roll result and dice animation state
