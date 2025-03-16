@@ -209,7 +209,7 @@ function App() {
             alert("Caps Lock is stuck on! (Fake keyboard issue!)");
             break;
         case 'Automatically typing “Help me” uncontrollably in the search bar':
-            alert("The search bar is typing 'Help me' uncontrollably! (Fake glitch)");
+            alert("The search bar is typing 'Help me' uncontrollably!)");
 
             // Find the search bar (usually an input field with a name or placeholder like 'search')
             let searchBar = document.querySelector('input[type="search"], input[name="q"], input[placeholder="Search"]'); 
