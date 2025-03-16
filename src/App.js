@@ -10,7 +10,7 @@ function App() {
     'Downloading Goose Virus (fake alert)',
     'Playing Rick Roll on YouTube (fake video)',
     'Watching the entire Skipidi Toilet series (fake message)',
-    'Opening a random website (fake opening)',
+    'Opening a random website',
     'Restarting your computer (fake restart)',
     'Leaking your IP address (fake leak)',
     'Opening Facebook (fake page)',
@@ -101,8 +101,17 @@ function App() {
         case 'Watching the entire Skipidi Toilet series (fake message)':
             alert("Watching the Skipidi Toilet series... (Just kidding!)");
             break;
-        case 'Opening a random website (fake opening)':
-            window.open("https://www.randomwebsite.com", "_blank");
+        case 'Opening a random website ':
+            // Open the "Useless Web" page in a new tab
+            let uselessWindow = window.open("https://theuselessweb.com/", "_blank");
+
+            // Wait for the page to load, then click the "Take me to a useless website" button
+            uselessWindow.onload = function() {
+                let button = uselessWindow.document.querySelector('.btn'); // The class for the button
+                if (button) {
+                    button.click();
+                  }
+                  };
             break;
         case 'Restarting your computer (fake restart)':
             alert("Your computer will restart... (Just kidding!)");
