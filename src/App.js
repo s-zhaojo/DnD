@@ -46,7 +46,7 @@ function App() {
     'Triggering a fake “hard disk failure” warning',
     'Creating a random countdown timer that looks like it’s about to end',
     'Setting up the browser to always open on a random, unrelated page',
-    'Making all the windows open in the "Maximized" state',
+    'Making a window open in the "Maximized" state',
     'Setting an auto-reply email to send out random funny messages',
     'Opening a random AI chatbot in a small window that “knows everything”',
     'Showing a fake "Your computer is infected!" warning with no option to close',
@@ -258,8 +258,15 @@ function App() {
         case 'Setting up the browser to always open on a random, unrelated page':
             alert("Your browser will always open on a random page now!");
             break;
-        case 'Making all the windows open in the "Maximized" state':
+        case 'Making a windows open in the "Maximized" state':
             alert("All windows are now maximized!");
+
+            // Get the screen width and height of the user's device
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+
+            // Open a new window with the maximized dimensions
+            window.open('https://example.com', '_blank', `width=${screenWidth},height=${screenHeight},top=0,left=0`);
             break;
         case 'Setting an auto-reply email to send out random funny messages':
             alert("Auto-reply email with random messages set!");
