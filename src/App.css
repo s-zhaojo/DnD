@@ -1,3 +1,4 @@
+/* App.css */
 .App {
   text-align: center;
   background-color: #f4f7fc;
@@ -15,7 +16,7 @@
   justify-content: center;
   gap: 20px;
   max-width: 900px;
-  flex-wrap: nowrap; /* Prevent wrapping, ensure dice stay in one row */
+  flex-wrap: nowrap;
 }
 
 .dice-section {
@@ -28,15 +29,18 @@
 }
 
 #happy {
-  border: 3px solid #4caf50;
+  border: 3px solid #FFFF00;
+  color: black;
 }
 
 #mad {
   border: 3px solid #f44336;
+  color: black;
 }
 
 #sad {
   border: 3px solid #2196f3;
+  color: black;
 }
 
 button {
@@ -63,7 +67,7 @@ button:disabled {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Add space between dice */
+  gap: 20px;
   margin-top: 30px;
 }
 
@@ -90,4 +94,11 @@ button:disabled {
   50% { transform: rotateX(0deg) rotateY(180deg); }
   75% { transform: rotateX(180deg) rotateY(180deg); }
   100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+h1 {
+  font-family: 'Pacifico', sans-serif; /* Applying the fun font */
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
 }
