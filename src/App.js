@@ -8,7 +8,7 @@ function App() {
     'Closes window',
     'Automatically downloading Minecraft Education Edition (fake download)',
     'Downloading Goose Virus (fake alert)',
-    'Playing Rick Roll on YouTube (fake video)',
+    'Playing Rick Roll on YouTube',
     'Watching the entire Skipidi Toilet series',
     'Opening a random website',
     'Restarting your computer',
@@ -90,12 +90,12 @@ function App() {
             window.close();
             break;
         case 'Automatically downloading Minecraft Education Edition (fake download)':
-            alert("Pretend Minecraft Education Edition is downloading...");
+            window.open("https://education.minecraft.net/en-us/get-started/download");
             break;
         case 'Downloading Goose Virus (fake alert)':
             alert("Goose Virus Downloaded! (Just kidding!)");
             break;
-        case 'Playing Rick Roll on YouTube (fake video)':
+        case 'Playing Rick Roll on YouTube':
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
             break;
         case 'Watching the entire Skipidi Toilet series':
