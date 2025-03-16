@@ -11,17 +11,15 @@ To run this project locally, follow these steps:
 
 1. Clone the Repository
 Clone this repository to your local machine using:
-
-
 git clone https://github.com/s-zhaojo/DnD/tree/main
+
 2. Install Dependencies
 Navigate to the project folder and install the necessary dependencies:
-
 cd moodroll
 npm install
+
 3. Run the App
 Start the app in development mode:
-
 npm start
 The app will be available at https://dn-d7584.vercel.app/
 
