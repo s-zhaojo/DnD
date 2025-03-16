@@ -6,6 +6,7 @@ function App() {
   const actions = [
   'Downloading a virus (just kidding!)',
   window.close();
+  /*
   'Automatically downloading Minecraft Education Edition (fake download)',
   'Downloading Goose Virus (fake alert)',
   'Playing Rick Roll on YouTube (fake video)',
@@ -60,7 +61,7 @@ function App() {
   'Starting a fake file compression on random files',
   'Setting an annoying random sound that plays every minute',
   'Making the mouse cursor drag files without permission (fake glitch)'
-    
+    */
   ];
 
   // useState hook to store the current dice roll result and dice animation state
