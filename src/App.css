@@ -9,3 +9,73 @@
   flex-direction: column;
   padding: 20px;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.dice-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+}
+
+#happy {
+  border: 3px solid #4caf50;
+}
+
+#mad {
+  border: 3px solid #f44336;
+}
+
+#sad {
+  border: 3px solid #2196f3;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  font-size: 3em;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  margin: 15px auto;
+}
+
+.dice.rolling {
+  animation: rollDice 1s infinite;
+}
+
+@keyframes rollDice {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  25% { transform: rotateX(180deg) rotateY(0deg); }
+  50% { transform: rotateX(0deg) rotateY(180deg); }
+  75% { transform: rotateX(180deg) rotateY(180deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
