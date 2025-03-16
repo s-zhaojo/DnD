@@ -107,7 +107,7 @@ button:disabled {
 }
 
 .dice.rolling {
-  animation: rollAnimation 1s ease-in-out infinite;
+  animation: rollDice 1s infinite;
 }
 
 @keyframes rollDice {
