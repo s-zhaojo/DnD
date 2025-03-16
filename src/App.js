@@ -5,9 +5,8 @@ function App() {
   // List of possible fake actions
   const actions = [
   'Downloading a virus (just kidding!)',
-  window.close();
+  'closes window'
   'Automatically downloading Minecraft Education Edition (fake download)',
-  /*
   'Downloading Goose Virus (fake alert)',
   'Playing Rick Roll on YouTube (fake video)',
   'Watching the entire Skipidi Toilet series (fake message)',
@@ -20,8 +19,6 @@ function App() {
   'Open a random cat video at full volume.',
   'Load 30 tabs of "random word generators."',
   'Playing an audio loop of dial-up internet sounds',
-  
-  // First 30
   'Opening a window with "Are you sure you want to delete everything?"',
   'Changing your desktop wallpaper to a confusing abstract image',
   'Opening the "Not Responding" program on the taskbar',
@@ -37,8 +34,6 @@ function App() {
   'Creating a fake blue screen of death (BSOD)',
   'Opening multiple calculator windows and setting them to random values',
   'Starting a fake system scan that finds “too many problems”',
-  
-  // First 45
   'Making the mouse pointer invisible',
   'Opening an old-school screensaver like “3D Maze”',
   'Switching the browser to "Incognito mode" every time you try to close it',
@@ -54,14 +49,11 @@ function App() {
   'Making all the windows open in the "Maximized" state',
   'Setting an auto-reply email to send out random funny messages',
   'Opening a random AI chatbot in a small window that “knows everything”',
-  
-  // First 50
   'Showing a fake "Your computer is infected!" warning with no option to close',
   'Opening the calculator app and making it seem like it\'s doing calculations forever',
   'Starting a fake file compression on random files',
   'Setting an annoying random sound that plays every minute',
   'Making the mouse cursor drag files without permission (fake glitch)'
-    */
   ];
 
   // useState hook to store the current dice roll result and dice animation state
