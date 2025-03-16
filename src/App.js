@@ -228,7 +228,7 @@ function App() {
             alert("Auto-reply email with random messages set!");
             break;
         case 'Opening a random AI chatbot in a small window that “knows everything”':
-            window.open("https://www.randomchatbot.com", "_blank");
+            window.open("https://chatgpt.com/", "_blank");
             alert("AI Chatbot opened! (It knows everything!)");
             break;
         case 'Showing a fake "Your computer is infected!" warning with no option to close':
