@@ -32,10 +32,12 @@ This will bundle the app into the build folder, optimized for production deploym
 App Overview
 Mood Categories:
 Happy: Includes videos like "Happy" by Pharrell Williams and "Can't Stop the Feeling!" by Justin Timberlake.
+
 Mad: Includes tracks such as "Break Stuff" by Limp Bizkit and "Numb" by Linkin Park.
+
 Sad: Includes songs like "Hello" by Adele and "Shape of You" by Ed Sheeran (Sad version).
-Dice Rolling Mechanism:
-The app uses a dice roll for each mood category (Happy, Mad, and Sad), and based on the roll, a random video is selected and opened in a new browser tab.
+
+Dice Rolling Mechanism: The app uses a dice roll for each mood category (Happy, Mad, and Sad), and based on the roll, a random video is selected and opened in a new browser tab.
 
 Spline 3D Animation:
 The app uses a 3D scene from Spline as the background to provide an engaging visual experience.
@@ -44,8 +46,7 @@ Available Scripts
 In the project directory, you can run the following commands:
 
 npm start
-Runs the app in development mode. Open http://localhost:3000 to view it in your browser.
-
+Runs the app in development mode. Open https://dn-d7584.vercel.app/ to view it in your browser.
 The page will reload when you make changes. You may also see any lint errors in the console.
 
 npm test
