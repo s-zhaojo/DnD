@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 function App() {
   // List of possible fake actions
   const actions = [
-    'Downloading a virus (just kidding!)',
-  'Closing the tab (fake close)',
+  'Downloading a virus (just kidding!)',
+  window.close();
   'Automatically downloading Minecraft Education Edition (fake download)',
   'Downloading Goose Virus (fake alert)',
   'Playing Rick Roll on YouTube (fake video)',
