@@ -1,3 +1,4 @@
+/* Set up the general layout */
 .App {
   text-align: center;
   background-color: #f4f7fc;
@@ -106,23 +107,23 @@ button:disabled {
 }
 
 .dice.rolling {
-  animation: rollDice 1s infinite;
+  animation: rollAnimation 1s ease-in-out infinite;
 }
 
-@keyframes rollDice {
-    0% {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-    25% {
-        transform: rotateX(180deg) rotateY(0deg);
-    }
-    50% {
-        transform: rotateX(0deg) rotateY(180deg);
-    }
-    75% {
-        transform: rotateX(180deg) rotateY(180deg);
-    }
-    100% {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
+@keyframes rollAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
