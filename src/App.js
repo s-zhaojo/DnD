@@ -13,7 +13,7 @@ function App() {
     'Opening a random website',
     'Restarting your computer (fake restart)',
     'Leaking your IP address (fake leak)',
-    'Opening Facebook (fake page)',
+    'Opening Facebook',
     'Sending a link to vote for something (fake action)',
     'Giving credit card info or shutting down your computer (fake alert)',
     'Open a random cat video at full volume.',
@@ -110,7 +110,7 @@ function App() {
         case 'Leaking your IP address (fake leak)':
             alert("Leaking your IP address... (Fake, don't worry!)");
             break;
-        case 'Opening Facebook (fake page)':
+        case 'Opening Facebook':
             window.open("https://www.facebook.com", "_blank");
             break;
         case 'Sending a link to vote for something (fake action)':
