@@ -102,9 +102,9 @@ function App() {
             window.open("https://www.youtube.com/watch?v=WePNs-G7puA&list=PLMbdQkJ_UPvs3v00LsJnpJ1mE28eCSl5C", "_blank");
             break;
         case 'Opening a random website ':
-            window.open("https://theuselessweb.com/", "_blank");
+            window.open("https://theuselessweb.com", "_blank");
             break;
-          case 'Restarting your computer':
+        case 'Restarting your computer':
               alert("Restarting Computer");
               break;
         case 'Leaking your IP address (fake leak)':
