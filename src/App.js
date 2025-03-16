@@ -16,8 +16,8 @@ function App() {
     'Opening Facebook (fake page)',
     'Sending a link to vote for something (fake action)',
     'Giving credit card info or shutting down your computer (fake alert)'
-    '{fill in with idea}'
-    '{fill in with idea}'
+    'Open a random cat video at full volume.'
+    'Load 30 tabs of "random word generators."'
     '{fill in with idea}'
     // first fifteen
     '{fill in with idea}'
