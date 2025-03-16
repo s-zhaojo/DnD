@@ -33,7 +33,7 @@ function App() {
     'Opening a random "404 Page Not Found" screen',
     'Creating a fake blue screen of death (BSOD)',
     'Opening multiple calculator windows and setting them to random values',
-    'Starting a fake system scan that finds “too many problems”',
+    'Starting a system scan”',
     'Making the mouse pointer invisible',
     'Opening an old-school screensaver like “3D Maze”',
     'Switching the browser to "Incognito mode" every time you try to close it',
@@ -190,7 +190,7 @@ function App() {
             }
             alert("Multiple calculators are now open!");
             break;
-        case 'Starting a fake system scan that finds “too many problems”':
+        case 'Starting a system scan':
             alert("System scan complete! Found too many problems!");
             break;
         case 'Making the mouse pointer invisible':
