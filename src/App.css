@@ -13,9 +13,9 @@
 .container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
   max-width: 900px;
+  flex-wrap: nowrap; /* Prevent wrapping, ensure dice stay in one row */
 }
 
 .dice-section {
