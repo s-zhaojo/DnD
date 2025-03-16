@@ -11,7 +11,7 @@ function App() {
     'Playing Rick Roll on YouTube (fake video)',
     'Watching the entire Skipidi Toilet series',
     'Opening a random website',
-    'Restarting your computer (fake restart)',
+    'Restarting your computer',
     'Leaking your IP address (fake leak)',
     'Opening Facebook',
     'Sending a link to vote for something (fake action)',
@@ -104,9 +104,39 @@ function App() {
         case 'Opening a random website ':
             window.open("https://theuselessweb.com/", "_blank");
             break;
-        case 'Restarting your computer (fake restart)':
-            alert("Your computer will restart... (Just kidding!)");
-            break;
+        const { exec } = require('child_process');
+        switch (action) {
+          case 'Restarting your computer':
+            const platform = process.platform;
+            if (platform === 'win32') {
+            // For Windows
+            exec('shutdown -r -t 0', (error, stdout, stderr) => {
+              if (error) {
+                console.error(`exec error: ${error}`);
+                return;
+              }
+              console.log(`stdout: ${stdout}`);
+              console.error(`stderr: ${stderr}`);
+            });
+        } else if (platform === 'darwin' || platform === 'linux') {
+          // For macOS or Linux
+          exec('sudo shutdown -r now', (error, stdout, stderr) => {
+            if (error) {
+              console.error(`exec error: ${error}`);
+              return;
+            }
+              console.log(`stdout: ${stdout}`);
+              console.error(`stderr: ${stderr}`);
+            });
+          } else {
+            console.log('Unsupported platform:', platform);
+          }
+          break;
+          // Other cases can go here
+          default:
+            console.log('No matching action.');
+}
+
         case 'Leaking your IP address (fake leak)':
             alert("Leaking your IP address... (Fake, don't worry!)");
             break;
