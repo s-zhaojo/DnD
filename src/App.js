@@ -9,7 +9,7 @@ function App() {
     'Automatically downloading Minecraft Education Edition (fake download)',
     'Downloading Goose Virus (fake alert)',
     'Playing Rick Roll on YouTube (fake video)',
-    'Watching the entire Skipidi Toilet series (fake message)',
+    'Watching the entire Skipidi Toilet series',
     'Opening a random website',
     'Restarting your computer (fake restart)',
     'Leaking your IP address (fake leak)',
@@ -98,8 +98,8 @@ function App() {
         case 'Playing Rick Roll on YouTube (fake video)':
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
             break;
-        case 'Watching the entire Skipidi Toilet series (fake message)':
-            alert("Watching the Skipidi Toilet series... (Just kidding!)");
+        case 'Watching the entire Skipidi Toilet series':
+            window.open("https://www.youtube.com/watch?v=WePNs-G7puA&list=PLMbdQkJ_UPvs3v00LsJnpJ1mE28eCSl5C", "_blank");
             break;
         case 'Opening a random website ':
             window.open("https://theuselessweb.com/", "_blank");
