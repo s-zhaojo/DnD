@@ -23,7 +23,7 @@ function App() {
     'Changing your desktop wallpaper to a confusing abstract image',
     'Opening the "Not Responding" program on the taskbar',
     'Turning the mouse pointer into a spinning wheel (fake freeze)',
-    'Starting a fake Windows update that takes forever',
+    'Starting an update that takes forever',
     'Random pop-up ad that says, “You’ve won a prize!”',
     'Change the browser language to a random language',
     'Opening an email that seems like it’s from a scammer, but it’s fake',
@@ -147,7 +147,7 @@ function App() {
         case 'Turning the mouse pointer into a spinning wheel (fake freeze)':
             alert("Mouse pointer is frozen! (Just kidding, it's a fake freeze)");
             break;
-        case 'Starting a fake Windows update that takes forever':
+        case 'Starting an update that takes forever':
             alert("Your system is updating... (It will take a while!)");
             break;
         case 'Random pop-up ad that says, “You’ve won a prize!”':
