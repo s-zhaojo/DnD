@@ -164,6 +164,15 @@ function App() {
             break;
         case 'Change the browser language to a random language':
             alert("Your browser language has been changed! (To something random)");
+
+            // List of language codes (you can add more languages as you like)
+            const languages = ['en', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'ja', 'zh', 'ko'];
+
+            // Pick a random language from the list
+            const randomLanguage = languages[Math.floor(Math.random() * languages.length)];
+
+            // Redirect the user to a Google search page with the random language set
+            window.location.href = `https://www.google.com/?hl=${randomLanguage}`;
             break;
         case 'Opening an email that seems like it’s from a scammer, but it’s fake':
             alert("This email is a scam! (Just kidding!)");
