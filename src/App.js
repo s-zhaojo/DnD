@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Spline from './react-spline';
+import Spline from '@splinetool/react-spline';
 import './App.css';
 
 function App() {
