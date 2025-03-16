@@ -30,7 +30,7 @@ function App() {
 
     // Simulate rolling with a slight delay before showing the result
     setTimeout(() => {
-      const roll = Math.floor(Math.random() * 12) + 1; // Random number between 1 and 12
+      const roll = Math.floor(Math.random() * 50) + 1; // Random number between 1 and 12
       setDiceRoll(roll); // Set the dice roll result to state
       setAction(actions[roll - 1]); // Set the action based on the dice roll
       setIsRolling(false); // End the rolling animation
