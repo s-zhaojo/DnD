@@ -6,8 +6,8 @@ function App() {
   const actions = [
   'Downloading a virus (just kidding!)',
   window.close();
-  /*
   'Automatically downloading Minecraft Education Edition (fake download)',
+  /*
   'Downloading Goose Virus (fake alert)',
   'Playing Rick Roll on YouTube (fake video)',
   'Watching the entire Skipidi Toilet series (fake message)',
