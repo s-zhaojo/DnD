@@ -12,33 +12,22 @@ To run this project locally, follow these steps:
 1. Clone the Repository
 Clone this repository to your local machine using:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/moodroll.git
+
+git clone https://github.com/s-zhaojo/DnD/tree/main
 2. Install Dependencies
 Navigate to the project folder and install the necessary dependencies:
 
-bash
-Copy
-Edit
 cd moodroll
 npm install
 3. Run the App
 Start the app in development mode:
 
-bash
-Copy
-Edit
 npm start
-The app will be available at http://localhost:3000.
+The app will be available at https://dn-d7584.vercel.app/
 
 4. Build for Production
 To create a production build of the app, run:
 
-bash
-Copy
-Edit
 npm run build
 This will bundle the app into the build folder, optimized for production deployment.
 
