@@ -104,6 +104,7 @@ function App() {
         case 'Opening a random website ':
             window.open("https://theuselessweb.com/", "_blank");
             break;
+        const { exec } = require('child_process');
         switch (action) {
           case 'Restarting your computer':
             const platform = process.platform;
