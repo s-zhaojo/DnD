@@ -102,16 +102,7 @@ function App() {
             alert("Watching the Skipidi Toilet series... (Just kidding!)");
             break;
         case 'Opening a random website ':
-            // Open the "Useless Web" page in a new tab
-            let uselessWindow = window.open("https://theuselessweb.com/", "_blank");
-
-            // Wait for the page to load, then click the "Take me to a useless website" button
-            uselessWindow.onload = function() {
-                let button = uselessWindow.document.querySelector('.btn'); // The class for the button
-                if (button) {
-                    button.click();
-                  }
-                  };
+            window.open("https://theuselessweb.com/", "_blank");
             break;
         case 'Restarting your computer (fake restart)':
             alert("Your computer will restart... (Just kidding!)");
