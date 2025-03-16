@@ -93,7 +93,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Roll the D12</h1>
+        <h1>Roll the D50</h1>
         <p>Find out what happens when you roll the dice!</p>
 
         {/* 3D Dice Roll Animation */}
